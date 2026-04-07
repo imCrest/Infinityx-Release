@@ -6,21 +6,20 @@ Maintainer: SUJΛL (@imCrest)
 
 ---
 
-[IMPORTANT WARNING]
+## IMPORTANT WARNING
 
-> ⚠️ **URGENT WARNING: READ BEFORE FLASHING**
->
+> [!WARNING]
 > **DO NOT FLASH THIS ROM IF YOU ARE ON THE LATEST OOS FIRMWARES (1600 or 1301).**
 >
-> 1. These firmwares have triggered the ARB (Anti Roll Back) Fuse, which prevents downgrading to any previous firmware.  
-> 2. Flashing custom ROMs on these firmwares will result in a HARD BRICK.  
-> 3. If you hard brick your device by ignoring this warning, it is your fault.  
-> 4. As of February 2026, no free or unofficial method works to recover from this ARB hard brick. Only an Official OnePlus Service Center can fix it.  
-> 5. Please visit a service center instead of looking for free fixes online.  
+> - These firmwares have triggered the ARB (Anti Roll Back) Fuse, which prevents downgrading.  
+> - Flashing custom ROMs on these firmwares will result in a HARD BRICK.  
+> - If you hard brick your device by ignoring this warning, it is your responsibility.  
+> - As of February 2026, no free or unofficial method exists to recover from this ARB hard brick.  
+> - Only an Official OnePlus Service Center can fix your device.  
 
 ---
 
-[DOWNLOAD LINKS]
+## DOWNLOAD LINKS
 
 We provide dual servers for fast and reliable downloads. All recovery images (boot.img, vendor_boot.img, dtbo.img) are available directly on our GitHub page.
 
@@ -31,11 +30,11 @@ Note: This build is Non-ARB.
 
 ---
 
-[FLASHING INSTRUCTIONS]
+## FLASHING INSTRUCTIONS
 
 Follow these steps carefully to ensure a smooth installation.
 
-[PREREQUISITES]
+### PREREQUISITES
 
 - Unlocked Bootloader  
 - A PC/Laptop with ADB & Fastboot installed  
@@ -43,9 +42,7 @@ Follow these steps carefully to ensure a smooth installation.
 
 ---
 
-[INSTALLATION STEPS]
-
-[STEP 1 - DOWNLOAD FILES]
+### STEP 1 - DOWNLOAD FILES
 
 Download the ROM .zip file (GApps or Vanilla), along with:
 - boot.img  
@@ -54,7 +51,7 @@ Download the ROM .zip file (GApps or Vanilla), along with:
 
 ---
 
-[STEP 2 - BOOT TO FASTBOOT]
+### STEP 2 - BOOT TO FASTBOOT
 
 - Power off your device  
 - Hold Volume Down + Power Button  
@@ -62,7 +59,7 @@ Download the ROM .zip file (GApps or Vanilla), along with:
 
 ---
 
-[STEP 3 - FLASH IMAGES]
+### STEP 3 - FLASH IMAGES
 
 ```bash
 fastboot flash boot boot.img
@@ -72,7 +69,7 @@ fastboot flash dtbo dtbo.img
 
 ---
 
-[STEP 4 - ENTER RECOVERY]
+### STEP 4 - ENTER RECOVERY
 
 - Use volume buttons to navigate  
 - Select Recovery Mode  
@@ -80,7 +77,7 @@ fastboot flash dtbo dtbo.img
 
 ---
 
-[STEP 5 - FORMAT DATA]
+### STEP 5 - FORMAT DATA
 
 - Go to: Factory Reset → Format Data / Factory Reset  
 - Confirm action  
@@ -89,7 +86,7 @@ This will wipe all internal storage. Backup your data first.
 
 ---
 
-[STEP 6 - ADB SIDELOAD]
+### STEP 6 - ADB SIDELOAD
 
 - Go back to main menu  
 - Select: Apply Update → Apply from ADB  
@@ -102,7 +99,7 @@ adb sideload <drag_and_drop_ROM.zip_here>
 
 ---
 
-[STEP 7 - REBOOT]
+### STEP 7 - REBOOT
 
 - Once sideload reaches 47% or completes  
 - Go back to main menu  
@@ -110,6 +107,6 @@ adb sideload <drag_and_drop_ROM.zip_here>
 
 ---
 
-[FINISHED]
+## FINISHED
 
-Your device should now boot into Project Infinity X
+Your device should now boot into Project Infinity X 🚀
