@@ -23,7 +23,7 @@ Maintainer: SUJΛL (@imCrest)
 
 We provide dual servers for fast and reliable downloads. All recovery images (boot.img, vendor_boot.img, dtbo.img) are available directly on our GitHub page.
 
-- Download via Server 1 (GitHub Releases): https://github.com/imCrest/Infinityx-Release/releases  
+- [Download via Server 1 (GitHub Releases)](https://github.com/imCrest/Infinityx-Release/releases)
 - Server 2 (Pixeldrain): Mirror links are provided in our official Telegram channel release posts  
 
 Note: This build is Non-ARB.
