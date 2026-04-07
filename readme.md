@@ -6,6 +6,8 @@ Maintainer: SUJΛL (@imCrest)
 
 ---
 
+[IMPORTANT WARNING]
+
 > ⚠️ **URGENT WARNING: READ BEFORE FLASHING**
 >
 > **DO NOT FLASH THIS ROM IF YOU ARE ON THE LATEST OOS FIRMWARES (1600 or 1301).**
@@ -18,7 +20,7 @@ Maintainer: SUJΛL (@imCrest)
 
 ---
 
-Downloads
+[DOWNLOAD LINKS]
 
 We provide dual servers for fast and reliable downloads. All recovery images (boot.img, vendor_boot.img, dtbo.img) are available directly on our GitHub page.
 
@@ -29,11 +31,11 @@ Note: This build is Non-ARB.
 
 ---
 
-Flashing Instructions
+[FLASHING INSTRUCTIONS]
 
 Follow these steps carefully to ensure a smooth installation.
 
-Prerequisites
+[PREREQUISITES]
 
 - Unlocked Bootloader  
 - A PC/Laptop with ADB & Fastboot installed  
@@ -41,9 +43,10 @@ Prerequisites
 
 ---
 
-Step-by-Step Guide
+[INSTALLATION STEPS]
 
-1. Download Required Files  
+[STEP 1 - DOWNLOAD FILES]
+
 Download the ROM .zip file (GApps or Vanilla), along with:
 - boot.img  
 - vendor_boot.img  
@@ -51,14 +54,15 @@ Download the ROM .zip file (GApps or Vanilla), along with:
 
 ---
 
-2. Reboot to Fastboot / Bootloader Mode  
+[STEP 2 - BOOT TO FASTBOOT]
+
 - Power off your device  
 - Hold Volume Down + Power Button  
 - Connect your phone to PC  
 
 ---
 
-3. Flash Required Images  
+[STEP 3 - FLASH IMAGES]
 
 ```bash
 fastboot flash boot boot.img
@@ -68,7 +72,7 @@ fastboot flash dtbo dtbo.img
 
 ---
 
-4. Reboot to Recovery  
+[STEP 4 - ENTER RECOVERY]
 
 - Use volume buttons to navigate  
 - Select Recovery Mode  
@@ -76,7 +80,7 @@ fastboot flash dtbo dtbo.img
 
 ---
 
-5. Format Data (IMPORTANT)
+[STEP 5 - FORMAT DATA]
 
 - Go to: Factory Reset → Format Data / Factory Reset  
 - Confirm action  
@@ -85,7 +89,7 @@ This will wipe all internal storage. Backup your data first.
 
 ---
 
-6. Flash ROM (ADB Sideload)
+[STEP 6 - ADB SIDELOAD]
 
 - Go back to main menu  
 - Select: Apply Update → Apply from ADB  
@@ -98,7 +102,7 @@ adb sideload <drag_and_drop_ROM.zip_here>
 
 ---
 
-7. Reboot System  
+[STEP 7 - REBOOT]
 
 - Once sideload reaches 47% or completes  
 - Go back to main menu  
@@ -106,6 +110,6 @@ adb sideload <drag_and_drop_ROM.zip_here>
 
 ---
 
-Done!
+[FINISHED]
 
 Your device should now boot into Project Infinity X
