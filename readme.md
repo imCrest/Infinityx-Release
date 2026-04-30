@@ -18,7 +18,7 @@ Safe flashing instructions for **A/B devices**.
 
 Download these files before starting:
 
-- ROM zip
+- `ROM zip`
 - `boot.img`
 - `vendor_boot.img`
 - `dtbo.img`
