@@ -1,11 +1,11 @@
 {
   "response": [
     {
-      "datetime": 1777980000, 
-      "filename": "Gapps-Project_Infinity-X-3.10-larry-05.05.2026-UNOFFICIAL.zip",
-      "id": "034feff950e1add6fc5b9ca09da43e043f042e0da5ff771b3ffb4e151660c7ed",
-      "size": 2093796556, 
-      "url": "https://github.com/imCrest/Infinityx-Release/releases/download/3.10/Gapps-Project_Infinity-X-3.10-larry-05.05.2026-UNOFFICIAL.zip",
+      "filename": "Project_Infinity-X-3.10-larry-12.05.2026-GAPPS-UNOFFICIAL.zip",
+      "download": "https://github.com/imCrest/Infinityx-Release/releases/download/3.10-B/Project_Infinity-X-3.10-larry-12.05.2026-GAPPS-UNOFFICIAL.zip",
+      "timestamp": 1778587196,
+      "md5": "19a0ba924742dfea3c5f25916427e6f8",
+      "size": 2096368247,
       "version": "3.10"
     }
   ]
