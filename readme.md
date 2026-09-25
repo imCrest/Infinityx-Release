@@ -155,4 +155,4 @@ Once back in recovery:
 
 - **Initial Boot Time**: First boot takes roughly 3 to 5 minutes while the system sets up encryption.
 - **Seamless OTA Updates**: Automatic Over-The-Air updates are supported out-of-the-box. Future updates can be checked and installed via **Settings -> System -> Updater**.
-- **Community & Support**: Join the official [OnePlus Nord CE 3 Lite / N30 Community](https://t.me/OnePlusNordCE3Lite) on Telegram for assistance.
+- **Community & Support**: Join the official [OnePlus Nord CE 3 Lite / N30 Community](https://t.me/OPNordCE3Lite) on Telegram for assistance.
