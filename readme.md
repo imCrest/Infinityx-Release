@@ -1,6 +1,6 @@
-# Project Infinity-X - Complete Flashing Guide (OnePlus Nord CE 2 Lite / 3 Lite 5G / N30 - `larry`)
+# Project Infinity-X 4.0 - Android 17 Flashing Guide (OnePlus Nord CE 2 Lite / 3 Lite 5G / N30 - `larry`)
 
-Official Flashing & Partition Setup Guide for **Project Infinity-X** on OnePlus Nord CE 2 Lite 5G, OnePlus Nord CE 3 Lite 5G, and OnePlus Nord N30 5G (`larry`).
+Official Flashing & Partition Setup Guide for **Project Infinity-X 4.0 (Android 17)** on OnePlus Nord CE 2 Lite 5G, OnePlus Nord CE 3 Lite 5G, and OnePlus Nord N30 5G (`larry`).
 
 Based on the [Official LineageOS Larry Wiki](https://wiki.lineageos.org/devices/larry/install/variant1) and device partition requirements.
 
@@ -22,22 +22,18 @@ Based on the [Official LineageOS Larry Wiki](https://wiki.lineageos.org/devices/
 
 ---
 
-## 📥 Required Downloads
+## Required Downloads
 
-Download all required files to your PC before beginning:
+Download the required files to your PC before beginning:
 
-| File | Description | Download Links |
+| File | Description | Download Link |
 | :--- | :--- | :--- |
-| **Project Infinity-X ROM** | Android 15/16 QPR-2 Build (`.zip`) | [GitHub Releases](https://github.com/imCrest/Infinityx-Release/releases/latest) • [SourceForge CDN](https://sourceforge.net/projects/infinity-x-larry/files/) |
-| **Copy Partitions** | A/B Slot Sync Script (`.zip`) | [Download (GitHub Release)](https://github.com/imCrest/Infinityx-Release/releases/download/ARB-4.0/copy-partitions-20220613-signed.zip) • [Download (Repository)](https://raw.githubusercontent.com/imCrest/Infinityx-Release/main/tools/copy-partitions-20220613-signed.zip) • [LineageOS Mirror](https://mirrorbits.lineageos.org/tools/copy-partitions-20220613-signed.zip) |
-| **Boot Image** | `boot.img` | [Download boot.img](https://github.com/imCrest/Infinityx-Release/releases/download/ARB-4.0/boot.img) |
-| **Vendor Boot** | `vendor_boot.img` *(Contains Recovery)* | [Download vendor_boot.img](https://github.com/imCrest/Infinityx-Release/releases/download/ARB-4.0/vendor_boot.img) |
-| **DTBO Image** | `dtbo.img` | [Download dtbo.img](https://github.com/imCrest/Infinityx-Release/releases/download/ARB-4.0/dtbo.img) |
-| **Stock Firmware** | OOS14 / OOS15 Archive | [SourceForge Archive](https://sourceforge.net/projects/infinity-x-larry/files/) |
+| **ROM & Partition Images** | Project Infinity-X 4.0 (Android 17) ROM zip, `boot.img`, `vendor_boot.img`, `dtbo.img` | [SourceForge Files Directory](https://sourceforge.net/projects/infinity-x-larry/files/) |
+| **Copy Partitions** | Mandatory A/B Slot Sync Script (`copy-partitions-20220613-signed.zip`) | [GitHub Release Asset](https://github.com/imCrest/Infinityx-Release/releases/download/ARB-4.0/copy-partitions-20220613-signed.zip) / [Direct Raw](https://raw.githubusercontent.com/imCrest/Infinityx-Release/main/tools/copy-partitions-20220613-signed.zip) |
 
 ---
 
-## 📋 Basic Requirements
+## Basic Requirements
 
 1. **PC Platform Tools**: Ensure your PC has the latest ADB and Fastboot drivers installed.
 2. **Stock OS Call/SMS Test**: Boot your device with stock OS at least once and verify that you can place/receive calls, SMS, and VoLTE/VoWiFi to provision IMS.
@@ -45,12 +41,12 @@ Download all required files to your PC before beginning:
 
 ---
 
-## 🚀 Step-by-Step Installation Guide
+## Step-by-Step Installation Guide
 
 ### Step 1: Enable USB Debugging & OEM Unlocking
-1. Open **Settings** ➔ **About Device** ➔ **Version**.
+1. Open **Settings -> About Device -> Version**.
 2. Tap **Build Number** 7 times until Developer options are unlocked.
-3. Navigate to **Settings** ➔ **Additional Settings** ➔ **Developer Options**.
+3. Navigate to **Settings -> Additional Settings -> Developer Options**.
 4. Enable:
    - **OEM Unlocking**
    - **USB Debugging**
@@ -112,27 +108,27 @@ fastboot reboot recovery
 ### Step 6: Ensure Both Slots Are Consistent (Copy-Partitions)
 To ensure the inactive slot has matching firmware and prevent hard-bricks:
 
-1. In Recovery, select **Apply update** ➔ **Apply from ADB**.
+1. In Recovery, select **Apply update -> Apply from ADB**.
 2. On your computer, sideload `copy-partitions-20220613-signed.zip`:
    ```bash
    adb -d sideload copy-partitions-20220613-signed.zip
    ```
 3. When prompted on screen with `Signature verification failed`, tap **Yes** *(expected for add-on scripts)*.
-4. Once completed, tap **Advanced** ➔ **Reboot to recovery** to restart recovery.
+4. Once completed, tap **Advanced -> Reboot to recovery** to restart recovery.
 
 ---
 
 ### Step 7: Factory Reset / Format Data
 Once back in recovery:
 
-1. Select **Factory Reset** ➔ **Format data / factory reset**.
+1. Select **Factory Reset -> Format data / factory reset**.
 2. Confirm the format *(ignore any minor metadata warnings)*.
 3. Return to the main menu.
 
 ---
 
 ### Step 8: Sideload Project Infinity-X ROM
-1. On your phone, select **Apply update** ➔ **Apply from ADB**.
+1. On your phone, select **Apply update -> Apply from ADB**.
 2. Sideload the Project Infinity-X ROM package from your PC:
    ```bash
    adb -d sideload Project_Infinity-X-4.0-larry-*-GAPPS-UNOFFICIAL.zip
@@ -142,7 +138,7 @@ Once back in recovery:
 > [!TIP]
 > **Understanding ADB Sideload Output**:
 > - Normally ADB reports `Total xfer: 1.00x`.
-> - In many cases, the progress on PC may pause around **47%** and output `adb: failed to read command: Success` or `No error`. This is **completely normal** and indicates a successful transfer!
+> - In many cases, the progress on PC may pause around **47%** and output `adb: failed to read command: Success` or `No error`. This is completely normal and indicates a successful transfer.
 > - When installation completes, recovery may prompt: *"Reboot to recovery to flash add-ons?"*.
 >   - Select **No** (GApps are already built-in).
 >   - Select **Yes** only if you plan to flash root packages like Magisk/KernelSU.
@@ -150,13 +146,13 @@ Once back in recovery:
 ---
 
 ### Step 9: Final Format Data & Reboot
-1. Select **Factory Reset** ➔ **Format data / factory reset** one final time.
+1. Select **Factory Reset -> Format data / factory reset** one final time.
 2. Select **Reboot system now**.
 
 ---
 
-## 📱 Post-Installation & OTA Notes
+## Post-Installation & OTA Notes
 
-* **Initial Boot Time**: First boot takes roughly 3 to 5 minutes while the system sets up encryption.
-* **Seamless OTA Updates**: Automatic Over-The-Air updates are supported out-of-the-box. Future updates can be checked and installed via **Settings ➔ System ➔ Updater**.
-* **Community & Support**: Join the official [OnePlus Nord CE 3 Lite / N30 Community](https://t.me/OnePlusNordCE3Lite) on Telegram for assistance.
+- **Initial Boot Time**: First boot takes roughly 3 to 5 minutes while the system sets up encryption.
+- **Seamless OTA Updates**: Automatic Over-The-Air updates are supported out-of-the-box. Future updates can be checked and installed via **Settings -> System -> Updater**.
+- **Community & Support**: Join the official [OnePlus Nord CE 3 Lite / N30 Community](https://t.me/OnePlusNordCE3Lite) on Telegram for assistance.
