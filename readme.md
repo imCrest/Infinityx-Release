@@ -1,14 +1,14 @@
-# Project Infinity-X 4.0 - Android 17 Flashing Guide (OnePlus Nord CE 2 Lite / 3 Lite 5G / N30 - `larry`)
+# Project Infinity-X 4.0 - Android 17 Flashing Guide (OnePlus Nord CE 3 Lite 5G / N30 - `larry`)
 
-Official Flashing & Partition Setup Guide for **Project Infinity-X 4.0 (Android 17)** on OnePlus Nord CE 2 Lite 5G, OnePlus Nord CE 3 Lite 5G, and OnePlus Nord N30 5G (`larry`).
+Official Flashing & Partition Setup Guide for **Project Infinity-X 4.0 (Android 17)** on OnePlus Nord CE 3 Lite 5G and OnePlus Nord N30 5G (`larry`).
 
 Based on the [Official LineageOS Larry Wiki](https://wiki.lineageos.org/devices/larry/install/variant1) and device partition requirements.
 
 ### Supported Models (Exact Match Required):
-- **CPH2467** (OnePlus Nord CE 2 Lite 5G)
-- **CPH2465** (OnePlus Nord CE 3 Lite 5G)
-- **CPH2513** (OnePlus Nord N30 5G)
-- **CPH2515** (OnePlus Nord N30 5G)
+- **CPH2467** (OnePlus Nord CE 3 Lite 5G - India)
+- **CPH2465** (OnePlus Nord CE 3 Lite 5G - Global / EU)
+- **CPH2513** (OnePlus Nord N30 5G - North America)
+- **CPH2515** (OnePlus Nord N30 5G - T-Mobile)
 
 ---
 
