@@ -1,0 +1,16 @@
+Project Infinity X | Android 16 (QPR-2)
+Device: OnePlus Nord CE 3 Lite 5G (larry)
+Maintainer: SUJΛL
+
+========================================
+v4.0 (26-09-2026) - Latest Update
+========================================
+
+Device Specific:
+• Implement Dolby Atmos (Sony DAX3) with LunarisDolby UI and Dolby C2 decoders
+• Implement Spatial Audio support (immersive_out mixPort & spatializer effect)
+• Fixed in-call speakerphone routing bug
+• Fixed volume slider jumping to maximum then mute
+• Fixed Bluetooth media switching and playback routing bug
+• Cleaned up audio policy configurations and vendor HAL paths
+• Fixed OTA changelog viewer URL in Updater app
