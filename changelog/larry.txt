@@ -6,3 +6,4 @@ Device Specific:
 • Fixed Bluetooth media switching and playback routing bug
 • Cleaned up audio policy configurations and vendor HAL paths
 • Fixed OTA changelog viewer URL in Updater app
+• Fixed lockscreen charging wattage showing 00/0.0W during active charging
