@@ -1,9 +1,10 @@
-Device Specific:
-• Implement Dolby Atmos (Sony DAX3) with LunarisDolby UI and Dolby C2 decoders
-• Implement Spatial Audio support (immersive_out mixPort & spatializer effect)
-• Fixed in-call speakerphone routing bug
-• Fixed volume slider jumping to maximum then mute
-• Fixed Bluetooth media switching and playback routing bug
-• Cleaned up audio policy configurations and vendor HAL paths
-• Fixed OTA changelog viewer URL in Updater app
-• Fixed lockscreen charging wattage showing 00/0.0W during active charging
+- Add homescreen folder customizations (resize/grid/icon)
+- Add custom recent panel styles 
+- Add app drawer apps folder support
+- Add recents swipe gestures feature
+- Add lock/unlock app feature in recents
+- Allow to change quickspace clock color
+- Add App drawer styles
+- More app drawer customizations for launcher
+- Fix an issue where stock app icon flashed for a second while custom icon pack in use
+- Add App rename & custom per-app icon feature
