@@ -4,12 +4,12 @@
       "maintainer": "SUJ\u039bL",
       "oem": "OnePlus",
       "device": "OnePlus Nord CE 3 Lite 5G (larry)",
-      "filename": "Project_Infinity-X-4.1-larry-31.10.2026-GAPPS-UNOFFICIAL.zip",
-      "download": "https://downloads.sourceforge.net/project/infinity-x-larry/Infinity-X/31-10-2026/GAPPS/Project_Infinity-X-4.1-larry-31.10.2026-GAPPS-UNOFFICIAL.zip",
-      "timestamp": 1793446674,
-      "md5": "058e98c9f7e364bf1fbdd1ee0fe14613",
-      "size": 2578723485,
-      "version": "4.1",
+      "filename": "Project_Infinity-X-4.2-larry-07.11.2026-GAPPS-UNOFFICIAL.zip",
+      "download": "https://downloads.sourceforge.net/project/infinity-x-larry/Infinity-X/07-11-2026/GAPPS/Project_Infinity-X-4.2-larry-07.11.2026-GAPPS-UNOFFICIAL.zip",
+      "timestamp": 1794070812,
+      "md5": "fa2ec7cb4a2ca8bb442ca2d7bcdd85bc",
+      "size": 2608659206,
+      "version": "4.2",
       "changelog": "https://raw.githubusercontent.com/imCrest/Infinityx-Release/main/changelog/larry.txt"
     }
   ]
